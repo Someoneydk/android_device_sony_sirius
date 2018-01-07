@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/*
-** Copyright 2014, The Android Open Source Project
+** Copyright (C) 2017 CypherOS
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,15 +15,19 @@
 ** limitations under the License.
 */
 -->
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
 <resources>
 
-    <!-- Doze: check proximity sensor before pulsing? -->
-    <bool name="doze_proximity_check_before_pulse">false</bool>
-
-    <!-- Doze: should the significant motion sensor be used as a pulse signal? -->
-    <bool name="doze_pulse_on_significant_motion">true</bool>
+    <!-- Hardware 'face' keys present on the device, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+          1 - Home
+          2 - Back
+          4 - Menu
+          8 - Assistant (search)
+          16 - App switch
+          32 - Camera
+       For example, a device with Back, Home and AppSwitch keys would set this
+       config to 19. -->
+    <integer name="config_deviceHardwareKeys">32</integer>
 
 </resources>
