@@ -14,6 +14,9 @@
 
 DEVICE_PATH := device/sony/sirius
 
+# SELinux (must be specified before including common mk files)
+BOARD_USE_ENFORCING_SELINUX := true
+
 # inherit from the common shinano definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
