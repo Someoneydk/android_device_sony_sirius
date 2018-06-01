@@ -1,6 +1,7 @@
 [
   {
-    "repository": "CypherOS/android_device_sony_shinano-common",
+    "remote": "aoscp",
+    "repository": "device_sony_shinano-common",
     "target_path": "device/sony/shinano-common"
   }
 ]
